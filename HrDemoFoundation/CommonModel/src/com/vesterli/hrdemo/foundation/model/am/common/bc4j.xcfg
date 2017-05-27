@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="com.vesterli.hrdemo.foundation.model.am.TestHrDemoCommonModel">
+    <AppModuleConfig name="TestHrDemoCommonModelLocal" jbo.project="com.vesterli.hrdemo.foundation.model.CommonModel"
+                     ApplicationName="com.vesterli.hrdemo.foundation.model.am.TestHrDemoCommonModel"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/HRDS"/>
+      <Security AppModuleJndiName="com.vesterli.hrdemo.foundation.model.am.TestHrDemoCommonModel"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="TestHrDemoCommonModelShared" jbo.project="com.vesterli.hrdemo.foundation.model.CommonModel"
+                     ApplicationName="com.vesterli.hrdemo.foundation.model.am.TestHrDemoCommonModel"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/HRDS"/>
+      <Security AppModuleJndiName="com.vesterli.hrdemo.foundation.model.am.TestHrDemoCommonModel"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

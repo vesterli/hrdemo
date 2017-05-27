@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <af:pageTemplate viewId="/HrDemoPageFragmentTemplate.jsf" id="pt1">
+        <f:facet name="content">
+            <af:panelFormLayout id="pfl1">
+                <af:button text="button 1" id="b1"/>
+                <!--            
+                <af:inputText value="#{bindings.DepartmentId.inputValue}" label="#{bindings.DepartmentId.hints.label}"
+                              required="#{bindings.DepartmentId.hints.mandatory}"
+                              columns="#{bindings.DepartmentId.hints.displayWidth}"
+                              maximumLength="#{bindings.DepartmentId.hints.precision}"
+                              shortDesc="#{bindings.DepartmentId.hints.tooltip}" id="it1">
+                    <f:validator binding="#{bindings.DepartmentId.validator}"/>
+                    <af:convertNumber groupingUsed="false" pattern="#{bindings.DepartmentId.format}"/>
+                </af:inputText>
+                <af:inputText value="#{bindings.DepartmentName.inputValue}"
+                              label="#{bindings.DepartmentName.hints.label}"
+                              required="#{bindings.DepartmentName.hints.mandatory}"
+                              columns="#{bindings.DepartmentName.hints.displayWidth}"
+                              maximumLength="#{bindings.DepartmentName.hints.precision}"
+                              shortDesc="#{bindings.DepartmentName.hints.tooltip}" id="it2"
+                              binding="#{backingBeanScope.DepartmentBean.dname}">
+                    <f:validator binding="#{bindings.DepartmentName.validator}"/>
+                </af:inputText>
+                <af:inputText value="#{bindings.City.inputValue}" label="#{bindings.City.hints.label}"
+                              required="#{bindings.City.hints.mandatory}" columns="#{bindings.City.hints.displayWidth}"
+                              maximumLength="#{bindings.City.hints.precision}"
+                              shortDesc="#{bindings.City.hints.tooltip}" id="it3">
+                    <f:validator binding="#{bindings.City.validator}"/>
+                </af:inputText>
+                <af:inputText value="#{bindings.CountryName.inputValue}" label="#{bindings.CountryName.hints.label}"
+                              required="#{bindings.CountryName.hints.mandatory}"
+                              columns="#{bindings.CountryName.hints.displayWidth}"
+                              maximumLength="#{bindings.CountryName.hints.precision}"
+                              shortDesc="#{bindings.CountryName.hints.tooltip}" id="it4">
+                    <f:validator binding="#{bindings.CountryName.validator}"/>
+                </af:inputText>
+                <f:facet name="footer">
+                    <af:panelGroupLayout layout="horizontal" id="pgl1">
+                        <af:button actionListener="#{bindings.First.execute}" text="First"
+                                   disabled="#{!bindings.First.enabled}" partialSubmit="true" id="b1"/>
+                        <af:button actionListener="#{bindings.Previous.execute}" text="Previous"
+                                   disabled="#{!bindings.Previous.enabled}" partialSubmit="true" id="b2"/>
+                        <af:button actionListener="#{bindings.Next.execute}" text="Next"
+                                   disabled="#{!bindings.Next.enabled}" partialSubmit="true" id="b3"/>
+                        <af:button actionListener="#{bindings.Last.execute}" text="Last"
+                                   disabled="#{!bindings.Last.enabled}" partialSubmit="true" id="b4"/>
+                        <af:spacer width="10" height="10" id="s2"/>
+                        <af:button text="Employees" id="b5" action="goEmp">
+                            <af:setPropertyListener from="#{backingBeanScope.DepartmentBean.dname.value}"
+                                                    to="#{pageFlowScope.StatusBean.departmentName}" type="action"/>
+                        </af:button>
+                        <af:button text="Show message" id="b6" action="#{backingBeanScope.DepartmentBean.ShowMessage}"/>
+                        <af:button text="Show another" id="b7" action="#{backingBeanScope.DepartmentBean.ShowAnother}"/>
+                        <af:button text="Do stuff" id="b8" action="goDoStuff"/>
+                    </af:panelGroupLayout>
+                </f:facet>
+                -->
+            </af:panelFormLayout>
+        </f:facet>
+    </af:pageTemplate>
+    <!--oracle-jdev-comment:preferred-managed-bean-name:DepartmentBean-->
+</ui:composition>

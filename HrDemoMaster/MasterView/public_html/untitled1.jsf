@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:document title="untitled1.jsf" id="d1">
+    <af:form id="f1">
+      <af:pageTemplate viewId="/HrDemoPageTemplate.jsf" id="pt1">
+        <f:facet name="content"/>
+        <f:attribute name="pageTitle" value="Empty page"/>
+      </af:pageTemplate>
+    </af:form>
+  </af:document>
+</f:view>

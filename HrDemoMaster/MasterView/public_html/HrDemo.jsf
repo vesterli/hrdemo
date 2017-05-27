@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:document title="HR Demo" id="d1">
+    <af:form id="f1">
+      <af:pageTemplate viewId="/HrDemoPageTemplate.jsf" id="pt1">
+        <f:facet name="content">
+          <af:panelGridLayout id="pgl1">
+            <af:gridRow marginTop="5px" height="30px" id="gr1">
+              <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc1">
+                <af:menuBar id="mb1">
+                  <af:menu text="Employees" id="m1">
+                    <af:commandMenuItem text="Departments" id="cmi1">
+                      <af:setPropertyListener from="#{'/WEB-INF/dept-emp-flow.xml#dept-emp-flow'}"
+                                              to="#{pageFlowScope.UiStateBean.currentTF}" type="action"/>
+                    </af:commandMenuItem>
+                    <af:commandMenuItem text="All employees" id="cmi2">
+                      <af:setPropertyListener from="#{'/WEB-INF/all-emp-flow.xml#all-emp-flow'}"
+                                              to="#{pageFlowScope.UiStateBean.currentTF}" type="action"/>
+                    </af:commandMenuItem>
+                  </af:menu>
+                </af:menuBar>
+              </af:gridCell>
+            </af:gridRow>
+            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr2">
+              <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc2">
+                <af:region value="#{bindings.dynamicRegion1.regionModel}" id="r1" partialTriggers="::cmi1 ::cmi2"/>
+              </af:gridCell>
+            </af:gridRow>
+          </af:panelGridLayout>
+        </f:facet>
+        <f:attribute name="pageTitle" value="HR Demo"/>
+      </af:pageTemplate>
+    </af:form>
+  </af:document>
+</f:view>

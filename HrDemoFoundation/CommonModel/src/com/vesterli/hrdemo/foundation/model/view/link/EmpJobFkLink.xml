@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="EmpJobFkLink"
+  Version="12.2.1.16.48"
+  InheritPersonalization="merge"
+  EntityAssociation="com.vesterli.hrdemo.foundation.model.entity.assoc.EmpJobFkAssoc">
+  <ViewLinkDefEnd
+    Name="JobsView"
+    Cardinality="1"
+    Source="true"
+    Owner="com.vesterli.hrdemo.foundation.model.view.JobsView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_finderName" Value="JobsView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.vesterli.hrdemo.foundation.model.view.JobsView.JobId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="EmployeesView"
+    Cardinality="-1"
+    Owner="com.vesterli.hrdemo.foundation.model.view.EmployeesView">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="EmployeesView"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="com.vesterli.hrdemo.foundation.model.view.EmployeesView.JobId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

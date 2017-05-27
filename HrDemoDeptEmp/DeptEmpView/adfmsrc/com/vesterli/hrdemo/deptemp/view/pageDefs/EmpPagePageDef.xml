@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48" id="EmpPagePageDef"
+                Package="com.vesterli.hrdemo.deptemp.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="EmployeesInDeptVO" RangeSize="25" DataControl="DeptEmpServiceDataControl"
+              id="EmployeesInDeptVOIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="EmployeesInDeptVOIterator" id="EmployeesInDeptVO">
+      <nodeDefinition DefName="com.vesterli.hrdemo.deptemp.model.view.EmployeesVO" Name="EmployeesInDeptVO0">
+        <AttrNames>
+          <Item Value="EmployeeId"/>
+          <Item Value="FirstName"/>
+          <Item Value="LastName"/>
+          <Item Value="HireDate"/>
+          <Item Value="SalaryString"/>
+          <Item Value="JobTitle"/>
+          <Item Value="DepartmentName"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

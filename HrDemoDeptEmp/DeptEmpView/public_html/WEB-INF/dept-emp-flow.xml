@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="dept-emp-flow">
+    <template-reference>
+      <document>/WEB-INF/hrdemo-task-flow-template.xml</document>
+      <id>hrdemo-task-flow-template</id>
+    </template-reference>
+    <default-activity>DeptPage</default-activity>
+    <managed-bean id="__1">
+      <managed-bean-name>EmployeeBean</managed-bean-name>
+      <managed-bean-class>com.vesterli.hrdemo.deptemp.view.beans.EmployeeBean</managed-bean-class>
+      <managed-bean-scope>backingBean</managed-bean-scope>
+    </managed-bean>
+    <managed-bean id="__2">
+      <managed-bean-name>DepartmentBean</managed-bean-name>
+      <managed-bean-class>com.vesterli.hrdemo.deptemp.view.beans.DepartmentBean</managed-bean-class>
+      <managed-bean-scope>backingBean</managed-bean-scope>
+    </managed-bean>
+    <managed-bean id="__7">
+      <managed-bean-name>StatusBean</managed-bean-name>
+      <managed-bean-class>com.vesterli.hrdemo.deptemp.view.beans.StatusBean</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="EmpPage">
+      <page>/EmpPage.jsff</page>
+    </view>
+    <view id="DeptPage">
+      <page>/DeptPage.jsff</page>
+    </view>
+    <method-call id="doStuff">
+      <method>#{backingBeanScope.DepartmentBean.doStuff}</method>
+      <outcome>
+        <fixed-outcome>return</fixed-outcome>
+      </outcome>
+    </method-call>
+    <control-flow-rule id="__3">
+      <from-activity-id>DeptPage</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>goEmp</from-outcome>
+        <to-activity-id>EmpPage</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__11">
+        <from-outcome>goDoStuff</from-outcome>
+        <to-activity-id>doStuff</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__5">
+      <from-activity-id>EmpPage</from-activity-id>
+      <control-flow-case id="__6">
+        <from-outcome>goDept</from-outcome>
+        <to-activity-id>DeptPage</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>doStuff</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome>return</from-outcome>
+        <to-activity-id>DeptPage</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="all-emp-flow">
+    <template-reference>
+      <document>/WEB-INF/hrdemo-task-flow-template.xml</document>
+      <id>hrdemo-task-flow-template</id>
+    </template-reference>
+    <default-activity>AllEmp</default-activity>
+    <managed-bean id="__1">
+      <managed-bean-name>AllEmpBean</managed-bean-name>
+      <managed-bean-class>com.vesterli.hrdemo.deptemp.view.beans.AllEmpBean</managed-bean-class>
+      <managed-bean-scope>backingBean</managed-bean-scope>
+    </managed-bean>
+    <view id="AllEmp">
+      <page>/AllEmp.jsff</page>
+    </view>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

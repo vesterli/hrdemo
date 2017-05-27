@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <af:pageTemplate viewId="/HrDemoPageFragmentTemplate.jsf" id="pt1">
+        <f:facet name="content">
+            <af:panelFormLayout id="pfl1">
+                <af:inputText value="#{bindings.EmployeeId.inputValue}" label="#{bindings.EmployeeId.hints.label}"
+                              required="#{bindings.EmployeeId.hints.mandatory}"
+                              columns="#{bindings.EmployeeId.hints.displayWidth}"
+                              maximumLength="#{bindings.EmployeeId.hints.precision}"
+                              shortDesc="#{bindings.EmployeeId.hints.tooltip}" id="it1">
+                    <f:validator binding="#{bindings.EmployeeId.validator}"/>
+                    <af:convertNumber groupingUsed="false" pattern="#{bindings.EmployeeId.format}"/>
+                </af:inputText>
+                <af:inputText value="#{bindings.FirstName.inputValue}" label="#{bindings.FirstName.hints.label}"
+                              required="#{bindings.FirstName.hints.mandatory}"
+                              columns="#{bindings.FirstName.hints.displayWidth}"
+                              maximumLength="#{bindings.FirstName.hints.precision}"
+                              shortDesc="#{bindings.FirstName.hints.tooltip}" id="it2">
+                    <f:validator binding="#{bindings.FirstName.validator}"/>
+                </af:inputText>
+<af:inputText value="#{bindings.LastName.inputValue}" label="#{bindings.LastName.hints.label}"
+                              required="#{bindings.LastName.hints.mandatory}"
+                              columns="#{bindings.LastName.hints.displayWidth}"
+                              maximumLength="#{bindings.LastName.hints.precision}"
+                              shortDesc="#{bindings.LastName.hints.tooltip}" id="it3">
+                    <f:validator binding="#{bindings.LastName.validator}"/>
+                </af:inputText>
+                <af:inputDate value="#{bindings.HireDate.inputValue}" label="#{bindings.HireDate.hints.label}"
+                              required="#{bindings.HireDate.hints.mandatory}"
+                              columns="#{bindings.HireDate.hints.displayWidth}"
+                              shortDesc="#{bindings.HireDate.hints.tooltip}" id="id1">
+                    <f:validator binding="#{bindings.HireDate.validator}"/>
+                    <af:convertDateTime pattern="#{bindings.HireDate.format}"/>
+                </af:inputDate>
+                <af:inputText value="#{bindings.SalaryString.inputValue}" label="#{bindings.SalaryString.hints.label}"
+                              required="#{bindings.SalaryString.hints.mandatory}"
+                              columns="#{bindings.SalaryString.hints.displayWidth}"
+                              maximumLength="#{bindings.SalaryString.hints.precision}"
+                              shortDesc="#{bindings.SalaryString.hints.tooltip}" id="it4"
+                              binding="#{backingBeanScope.AllEmpBean.sal}">
+                    <f:validator binding="#{bindings.SalaryString.validator}"/>
+                </af:inputText>
+                <af:inputText label="Suggested raise" id="it9" binding="#{backingBeanScope.AllEmpBean.raise}"/>
+                <af:inputText value="#{bindings.CommissionPct.inputValue}" label="#{bindings.CommissionPct.hints.label}"
+                              required="#{bindings.CommissionPct.hints.mandatory}"
+                              columns="#{bindings.CommissionPct.hints.displayWidth}"
+                              shortDesc="#{bindings.CommissionPct.hints.tooltip}" id="it7">
+                    <f:validator binding="#{bindings.CommissionPct.validator}"/>
+                    <af:convertNumber groupingUsed="false" pattern="#{bindings.CommissionPct.format}"/>
+                    <af:validateDoubleRange minimum="0.0" maximum="0.5" messageDetailMaximum="Max commission is 0.5"/>
+                </af:inputText>
+                <af:inputText value="#{bindings.DepartmentName.inputValue}"
+                              label="#{bindings.DepartmentName.hints.label}"
+                              required="#{bindings.DepartmentName.hints.mandatory}"
+                              columns="#{bindings.DepartmentName.hints.displayWidth}"
+                              maximumLength="#{bindings.DepartmentName.hints.precision}"
+                              shortDesc="#{bindings.DepartmentName.hints.tooltip}" id="it8">
+                    <f:validator binding="#{bindings.DepartmentName.validator}"/>
+                </af:inputText>
+                <f:facet name="footer">
+                    <af:panelGroupLayout layout="horizontal" id="pgl1">
+                        <af:button actionListener="#{bindings.First.execute}" text="First"
+                                   disabled="#{!bindings.First.enabled}" partialSubmit="true" id="b1"/>
+                        <af:button actionListener="#{bindings.Previous.execute}" text="Previous"
+                                   disabled="#{!bindings.Previous.enabled}" partialSubmit="true" id="b2"/>
+                        <af:button actionListener="#{bindings.Next.execute}" text="Next"
+                                   disabled="#{!bindings.Next.enabled}" partialSubmit="true" id="b3"/>
+                        <af:button actionListener="#{bindings.Last.execute}" text="Last"
+                                   disabled="#{!bindings.Last.enabled}" partialSubmit="true" id="b4"/>
+                        <af:spacer width="10" height="10" id="s2"/>
+                        <af:button text="Suggest raise" id="b5" action="#{backingBeanScope.AllEmpBean.SuggestRaise}"/>
+                        <af:button text="Give raise" id="b6" action="#{backingBeanScope.AllEmpBean.GiveRaise}"/>
+                        <af:button actionListener="#{bindings.Commit.execute}" text="Save"
+                                   id="b7"/>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <af:spacer width="10" height="10" id="s1"/>
+            </af:panelFormLayout>
+        </f:facet>
+    </af:pageTemplate>
+    <!--oracle-jdev-comment:preferred-managed-bean-name:AllEmpBean-->
+</ui:composition>

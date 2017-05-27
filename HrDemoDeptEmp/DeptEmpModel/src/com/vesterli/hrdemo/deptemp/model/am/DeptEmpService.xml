@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="DeptEmpService"
+  Version="12.2.1.16.48"
+  InheritPersonalization="merge"
+  ComponentClass="com.vesterli.hrdemo.foundation.bcbase.ApplicationModuleImpl"
+  DefClass="com.vesterli.hrdemo.foundation.bcbase.ApplicationModuleDefImpl"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="AllEmployeesVO"
+    ViewObjectName="com.vesterli.hrdemo.deptemp.model.view.EmployeesVO"/>
+  <ViewUsage
+    Name="DepartmentsVO"
+    ViewObjectName="com.vesterli.hrdemo.deptemp.model.view.DepartmentsVO"/>
+  <ViewUsage
+    Name="EmployeesInDeptVO"
+    ViewObjectName="com.vesterli.hrdemo.deptemp.model.view.EmployeesVO"/>
+  <ViewLinkUsage
+    Name="DeptEmpLink"
+    ViewLinkObjectName="com.vesterli.hrdemo.deptemp.model.view.link.DeptEmpLink"
+    SrcViewUsageName="com.vesterli.hrdemo.deptemp.model.am.DeptEmpService.DepartmentsVO"
+    DstViewUsageName="com.vesterli.hrdemo.deptemp.model.am.DeptEmpService.EmployeesInDeptVO"
+    Reversed="false"/>
+</AppModule>

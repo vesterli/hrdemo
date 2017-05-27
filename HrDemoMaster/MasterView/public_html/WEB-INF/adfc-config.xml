@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <managed-bean id="__1">
+    <managed-bean-name>PageSwitcherBean</managed-bean-name>
+    <managed-bean-class>com.vesterli.hrdemo.master.view.beans.PageSwitcherBean</managed-bean-class>
+    <managed-bean-scope>view</managed-bean-scope>
+    <managed-property id="__3">
+      <property-name>uiState</property-name>
+      <property-class>com.vesterli.hrdemo.master.view.beans.UiStateBean</property-class>
+      <value>#{pageFlowScope.UiStateBean}</value>
+    </managed-property>
+  </managed-bean>
+  <managed-bean id="__2">
+    <managed-bean-name>UiStateBean</managed-bean-name>
+    <managed-bean-class>com.vesterli.hrdemo.master.view.beans.UiStateBean</managed-bean-class>
+    <managed-bean-scope>pageFlow</managed-bean-scope>
+  </managed-bean>
+</adfc-config>
