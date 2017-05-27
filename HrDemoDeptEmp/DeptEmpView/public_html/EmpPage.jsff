@@ -3,6 +3,19 @@
                 xmlns:f="http://java.sun.com/jsf/core">
     <af:pageTemplate viewId="/HrDemoPageFragmentTemplate.jsf" id="pt1">
         <f:facet name="content">
+            <af:panelSplitter id="ps2" orientation="vertical">
+                <f:facet name="first">
+                    <af:panelGroupLayout layout="vertical" id="pgl1">
+                        <af:panelHeader text="Employees" id="ph1">
+                            <af:query id="qryId1" headerText="Search" disclosed="true"
+                                      value="#{bindings.ImplicitViewCriteriaQuery.queryDescriptor}"
+                                      model="#{bindings.ImplicitViewCriteriaQuery.queryModel}"
+                                      queryListener="#{bindings.ImplicitViewCriteriaQuery.processQuery}"
+                                      queryOperationListener="#{bindings.ImplicitViewCriteriaQuery.processQueryOperation}"/>
+                        </af:panelHeader>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="second">
             <af:panelCollection id="pc1">
                 <f:facet name="menus"/>
                 <f:facet name="toolbar">
@@ -100,6 +113,8 @@
                     </af:column>
                 </af:table>
             </af:panelCollection>
+            </f:facet>
+            </af:panelSplitter>
         </f:facet>
     </af:pageTemplate>
     <!--oracle-jdev-comment:preferred-managed-bean-name:EmployeeBean-->

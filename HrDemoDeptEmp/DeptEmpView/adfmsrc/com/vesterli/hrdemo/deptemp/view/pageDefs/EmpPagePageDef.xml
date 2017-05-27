@@ -6,6 +6,8 @@
     <variableIterator id="variables"/>
     <iterator Binds="EmployeesInDeptVO" RangeSize="25" DataControl="DeptEmpServiceDataControl"
               id="EmployeesInDeptVOIterator"/>
+    <searchRegion Criteria="__ImplicitViewCriteria__" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="EmployeesInDeptVOIterator" id="ImplicitViewCriteriaQuery"/>
   </executables>
   <bindings>
     <tree IterBinding="EmployeesInDeptVOIterator" id="EmployeesInDeptVO">
