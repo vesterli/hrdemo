@@ -1,0 +1,10 @@
+#:__PROLOG__:ADF_LibraryDependencies:ADF_Connections:!;ADF_DataControl:ADF_BusComps:!-;ADF_BindingApp:ADF_TaskFlow
+#:ADF_DataControl:oracle.adf.library.rc.appmodules.AppModuleURLDescriptor:0,com.vesterli.hrdemo.deptemp.model.am.DeptEmpService,DeptEmpServiceDataControl,com/vesterli/hrdemo/deptemp/model/DeptEmpModel.jpx
+#:ADF_BindingApp:oracle.adf.library.rc.bindingapp.BindingAppURLDescriptor:0,com/vesterli/hrdemo/deptemp/view/DataBindings.cpx
+#:__EPILOG__:
+oracle.adf.library.rc.dependencies.LibDepsServiceStrategy ADF_LibraryDependencies
+oracle.adf.library.rc.connections.CAServiceStrategy ADF_Connections
+oracle.adf.library.rc.dcxdatacontrols.DataControlServiceStrategy ADF_DataControl
+oracle.adf.library.rc.buscomp.BusCompServiceStrategy ADF_BusComps
+oracle.adf.library.rc.bindingapp.BindingAppServiceStrategy ADF_BindingApp
+oracle.adf.controller.rc.TaskFlowResourceServiceStrategy ADF_TaskFlow

@@ -46,7 +46,7 @@
       <property
          name="fromOutcome">goEmp</property>
       <property
-         name="sdm:polyPoints">R45,363.1088,174.86125,485.97064,177.01651,L45</property>
+         name="sdm:polyPoints">R45,363.2779,174.69531,485.80466,176.85059,L45</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -56,7 +56,7 @@
       <property
          name="fromOutcome">goDept</property>
       <property
-         name="sdm:polyPoints">L55,485.89124,186.07526,363.02936,183.92,R55</property>
+         name="sdm:polyPoints">L55,485.72214,186.24124,363.19534,184.08597,R55</property>
    </ControlFlowCase>
    <MethodCall
       id="MethodCall8">
@@ -79,7 +79,7 @@
       <property
          name="fromOutcome">return</property>
       <property
-         name="sdm:polyPoints">T43,360.47064,289.5683,316.47064,237.59096,B43</property>
+         name="sdm:polyPoints">T42,360.30466,289.40228,316.30466,237.88864,B42</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -89,6 +89,6 @@
       <property
          name="fromOutcome">goDoStuff</property>
       <property
-         name="sdm:polyPoints">B57,325.52936,234.42,369.52936,286.32312,T57</property>
+         name="sdm:polyPoints">B58,325.69534,234.58597,369.69534,286.01865,T58</property>
    </ControlFlowCase>
 </SDM>

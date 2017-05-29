@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ojdeploy-log>
+  <deploy-task>
+    <target>
+      <profile>adflibHrDemoCommonModel</profile>
+      <workspace>/C:/JDeveloper/hrdemo/HrDemoFoundation/HrDemoFoundation.jws</workspace>
+      <project>CommonModel.jpr</project>
+    </target>
+    <status exitcode="0">SUCCESS</status>
+  </deploy-task>
+  <summary>
+    <start-time>2017-05-29 14:46:26 CEST</start-time>
+    <end-time>2017-05-29 14:46:29 CEST</end-time>
+    <total-tasks>1</total-tasks>
+    <failures>0</failures>
+    <status exitcode="0">SUCCESS</status>
+  </summary>
+</ojdeploy-log>

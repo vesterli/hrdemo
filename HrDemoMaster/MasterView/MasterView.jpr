@@ -91,6 +91,7 @@
          <string v="ADF_FACES"/>
          <string v="ADFc"/>
          <string v="ADFm"/>
+         <string v="Ant"/>
          <string v="JSF"/>
          <string v="JSP"/>
          <string v="Java"/>
@@ -98,12 +99,23 @@
          <string v="XML"/>
       </list>
    </hash>
+   <hash n="oracle.jdeveloper.compiler.ant.AntConfiguration">
+      <value n="makeTarget" v="all"/>
+      <url n="projectBuildfile" path="build.xml"/>
+      <list n="targetList">
+         <string v="all"/>
+         <string v="clean"/>
+         <string v="compile"/>
+         <string v="copy"/>
+         <string v="deploy"/>
+      </list>
+   </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <value n="webIANAEncoding" v="UTF-8"/>
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="HrDemoMaster_MasterView_webapp">
+         <hash n="hrdemo">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
                <value n="autoInclude" v="true"/>
@@ -114,7 +126,8 @@
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
-            <value n="enterpriseAppName" v="HrDemoMaster_MasterView_webapp"/>
+            <value n="contextRoot" v="hrdemo"/>
+            <value n="enterpriseAppName" v="hrdemo"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -173,13 +186,13 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/HrDemoMaster_MasterView_webapp.war"/>
+            <url n="jarURL" path="deploy/hrdemo.war"/>
             <value n="profileClass" v="oracle.jdeveloper.deploy.war.WarProfile"/>
-            <value n="profileName" v="HrDemoMaster_MasterView_webapp"/>
+            <value n="profileName" v="hrdemo"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="HrDemoMaster_MasterView_webapp"/>
+         <string v="hrdemo"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">

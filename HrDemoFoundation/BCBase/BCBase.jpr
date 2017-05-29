@@ -75,6 +75,7 @@
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="ADFbc"/>
+         <string v="Ant"/>
          <string v="Java"/>
          <string v="XML"/>
       </list>
@@ -85,6 +86,17 @@
    <value n="oracle.jbo.SavedPreferences" v="true"/>
    <value n="oracle.jbo.VLPackage" v="view.link"/>
    <value n="oracle.jbo.VOPackage" v="view"/>
+   <hash n="oracle.jdeveloper.compiler.ant.AntConfiguration">
+      <value n="makeTarget" v="all"/>
+      <url n="projectBuildfile" path="build.xml"/>
+      <list n="targetList">
+         <string v="all"/>
+         <string v="clean"/>
+         <string v="compile"/>
+         <string v="copy"/>
+         <string v="deploy"/>
+      </list>
+   </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <list n="copyRes">
          <string v=".cpx"/>

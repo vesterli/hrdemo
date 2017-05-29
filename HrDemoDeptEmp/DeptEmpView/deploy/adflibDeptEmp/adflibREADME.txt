@@ -1,0 +1,37 @@
+Project: .../HrDemoDeptEmp/DeptEmpView/DeptEmpView.jpr
+Class-Path: 
+00001.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00001.jar file%3A%2F00001.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BCommon%2BRuntime
+00002.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00002.jar file%3A%2F00002.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BCommon%2BWeb%2BRuntime
+00003.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00003.jar file%3A%2F00003.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BController%2BRuntime
+00004.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00004.jar file%3A%2F00004.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BController%2BSchema
+00005.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00005.jar file%3A%2F00005.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BDVT%2BFaces%2BDatabinding%2BMDS%2BRuntime
+00006.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00006.jar file%3A%2F00006.jar%3Fd%3D1%26x%3D1%26e%3D1%26k%3D1%26i%3DADF%2BDVT%2BFaces%2BDatabinding%2BRuntime
+00007.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00007.jar file%3A%2F00007.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BDVT%2BFaces%2BRuntime
+00008.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00008.jar file%3A%2F00008.jar%3Fd%3D1%26x%3D1%26e%3D1%26k%3D1%26i%3DADF%2BFaces%2BDatabinding%2BRuntime
+00009.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00009.jar file%3A%2F00009.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BFaces%2BRuntime%2B11
+adflib9930.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: adflib9930.jar file%3A%2Fdev%2Fnull%3Fd%3D1%26x%3D1%26i%3DADF%2BLibrary%26c%3D1
+adflibhrdemocommonui.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: adflibHrDemoCommonUI.jar file%3A%2Fdev%2Fnull%3Fd%3D1%26x%3D1%26i%3DADF%2BLibrary
+00010.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00010.jar file%3A%2F00010.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BModel%2BRuntime
+00011.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00011.jar file%3A%2F00011.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BPage%2BFlow%2BRuntime
+00012.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00012.jar file%3A%2F00012.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DADF%2BWeb%2BRuntime
+00013.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00013.jar file%3A%2F00013.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DApache%2BHttp%2BComponents
+00014.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00014.jar file%3A%2F00014.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DBC4J%2BOracle%2BDomains
+00015.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00015.jar file%3A%2F00015.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DBC4J%2BRuntime
+00016.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00016.jar file%3A%2F00016.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DBC4J%2BSecurity
+00017.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00017.jar file%3A%2F00017.jar%3Fd%3D1%26x%3D1%26e%3D1%26k%3D1%26i%3DCommons%2BBeanutils%2B1.6
+00018.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00018.jar file%3A%2F00018.jar%3Fd%3D1%26x%3D1%26e%3D1%26k%3D1%26i%3DCommons%2BCollections%2B3.1
+00019.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00019.jar file%3A%2F00019.jar%3Fd%3D1%26x%3D1%26e%3D1%26k%3D1%26i%3DCommons%2BLogging%2B1.0.4
+00020.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00020.jar file%3A%2F00020.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DConnection%2BManager
+00021.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00021.jar file%3A%2F00021.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DJDeveloper%2BRuntime
+00022.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00022.jar file%3A%2F00022.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DJPS%2BDesigntime
+00023.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00023.jar file%3A%2F00023.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DJSF%2B2.2
+00024.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00024.jar file%3A%2F00024.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DJSP%2BRuntime
+00025.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00025.jar file%3A%2F00025.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DJSTL%2B1.2
+00026.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00026.jar file%3A%2F00026.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DMDS%2BRuntime
+00027.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00027.jar file%3A%2F00027.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DMDS%2BRuntime%2BDependencies
+00028.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00028.jar file%3A%2F00028.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DOracle%2BJDBC
+00029.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00029.jar file%3A%2F00029.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DOracle%2BJEWT
+00030.jar%23...%2FHrDemoDeptEmp%2FDeptEmpView%2FDeptEmpView.jpr: %2F00030.jar file%3A%2F00030.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DOracle%2BXML%2BParser%2Bv2
+adflibhrdemobcbase.jar%23...%2FHrDemoDeptEmp%2FDeptEmpModel%2FDeptEmpModel.jpr: adflibHrDemoBCBase.jar file%3A%2Fdev%2Fnull%3Fd%3D1%26x%3D1%26i%3DADF%2BLibrary%26c%3D1
+adflibhrdemocommonmodel.jar%23...%2FHrDemoDeptEmp%2FDeptEmpModel%2FDeptEmpModel.jpr: adflibHrDemoCommonModel.jar file%3A%2Fdev%2Fnull%3Fd%3D1%26x%3D1%26i%3DADF%2BLibrary
+00031.jar%23...%2FHrDemoDeptEmp%2FDeptEmpModel%2FDeptEmpModel.jpr: %2F00031.jar file%3A%2F00031.jar%3Fx%3D1%26e%3D1%26k%3D1%26i%3DResource%2BBundle%2BSupport

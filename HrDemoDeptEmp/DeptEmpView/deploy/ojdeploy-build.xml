@@ -1,0 +1,10 @@
+<?xml version = '1.0' standalone = 'yes' ?>
+<ojdeploy-build>
+  <deploy>
+    <parameter name="workspace" value="C:\JDeveloper\hrdemo\HrDemoDeptEmp\HrDemoDeptEmp.jws"/>
+    <parameter name="project" value="DeptEmpView"/>
+    <parameter name="profile" value="*"/>
+    <parameter name="nocompile" value="false"/>
+    <parameter name="outputfile" value="C:\JDeveloper\hrdemo\HrDemoDeptEmp\DeptEmpView\deploy\${profile.name}"/>
+  </deploy>
+</ojdeploy-build>

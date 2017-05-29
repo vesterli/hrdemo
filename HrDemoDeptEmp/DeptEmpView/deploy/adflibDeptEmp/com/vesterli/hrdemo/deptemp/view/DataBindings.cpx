@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.16.48" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.vesterli.hrdemo.deptemp.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/DeptPage.jsff" usageId="com_vesterli_hrdemo_deptemp_view_DeptPagePageDef"/>
+    <page path="/TestDeptEmpFlow.jsf" usageId="com_vesterli_hrdemo_deptemp_view_TestDeptEmpFlowPageDef"/>
+    <page path="/EmpPage.jsff" usageId="com_vesterli_hrdemo_deptemp_view_EmpPagePageDef"/>
+    <page path="/AllEmp.jsff" usageId="com_vesterli_hrdemo_deptemp_view_AllEmpPageDef"/>
+    <page path="/TestAllEmp.jsf" usageId="com_vesterli_hrdemo_deptemp_view_TestAllEmpPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_vesterli_hrdemo_deptemp_view_DeptPagePageDef"
+          path="com.vesterli.hrdemo.deptemp.view.pageDefs.DeptPagePageDef"/>
+    <page id="com_vesterli_hrdemo_deptemp_view_TestDeptEmpFlowPageDef"
+          path="com.vesterli.hrdemo.deptemp.view.pageDefs.TestDeptEmpFlowPageDef"/>
+    <page id="com_vesterli_hrdemo_deptemp_view_EmpPagePageDef"
+          path="com.vesterli.hrdemo.deptemp.view.pageDefs.EmpPagePageDef"/>
+    <page id="com_vesterli_hrdemo_deptemp_view_AllEmpPageDef"
+          path="com.vesterli.hrdemo.deptemp.view.pageDefs.AllEmpPageDef"/>
+    <page id="com_vesterli_hrdemo_deptemp_view_TestAllEmpPageDef"
+          path="com.vesterli.hrdemo.deptemp.view.pageDefs.TestAllEmpPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="DeptEmpServiceDataControl" Package="com.vesterli.hrdemo.deptemp.model.am"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="DeptEmpServiceLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
